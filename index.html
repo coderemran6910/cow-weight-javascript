@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> গরুর ওজন মাপার মিটার </title>
+    <link rel="stylesheet" href="cowWeight.css">
+</head>
+<body>
+
+
+ <div id="wrapper">
+       <section id="cowWeight-mitter">
+<div class="cowMitter-ttl">
+    <h1>গরু ও মহিষের ওজন মাপার মিটার </h1>
+</div>
+
+
+    
+<input type="text" id="cow-input" placeholder="পশুর বুকের বের">
+<input type="text" id="cow-input2" placeholder="পশুর লম্বার পরিমাপ">
+<button id="cow-button"  onclick="cowWeight()"> বডি ও গুস্তের ওজন জানতে ক্লিক করুন!!
+</button>
+
+
+<div class="result-Part">
+    <h1>মোট দেহের ওজন </h1>
+    <div id="body-weight"></div>
+    <h1> মোট গুস্তের ওজন </h1>
+    <div id="gusto-weight"></div>
+
+    <h1> গুস্তের মোট দাম  </h1>
+    <div id="gusterDam"></div>
+
+    
+
+</div>
+
+<div class="maker-name">
+    <h3> Developer Name:Md. Akramul Hoque Emran</h3>
+    <span> Number:01789039407;</span>
+</div>
+
+</section>
+ </div>
+
+
+
+
+
+    <script>
+function cowWeight(){
+
+var buk=document.getElementById('cow-input').value;
+var lomba=document.getElementById('cow-input2').value;
+
+var result=(buk*buk)*lomba/660;
+
+var gusto=(result*65)/100;
+var gusterDam=(gusto*700);
+
+document.getElementById('body-weight').innerHTML="= "+result+ "কেজী";
+document.getElementById('gusto-weight').innerHTML="= "+gusto+ "কেজী";
+document.getElementById('gusterDam').innerHTML="= "+gusterDam+ "টাকা মাত্র";
+
+}
+    </script>
+</body>
+</html>
+
+      

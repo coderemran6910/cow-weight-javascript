@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;  /* Horizontal center */
+    align-items: center;      /* Vertical center */
+}
+
+section#cowWeight-mitter {
+    
+    position: relative;
+    background: gray;
+    padding-top: 30px;
+    padding-bottom: 28px;
+    background-image: url(cow.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+section#cowWeight-mitter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* black overlay with 50% opacity */
+    z-index: -1; /* keep it behind the content */
+}
+
+.cowMitter-ttl h1 {
+    /* display: inline; */
+    margin: 0 auto;
+    text-align: center;
+    color: #25ff09;
+}
+
+
+
+input#cow-input {
+    padding: 10px;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 3px solid orange;
+    border-radius: 50px;
+    outline: none;
+}
+
+input#cow-input2 {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 3px solid orange;
+    border-radius: 50px;
+    outline: none;
+}
+
+button#cow-button {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    background: rgb(47, 245, 2);
+    border-radius: 10px;
+    outline: none;
+}
+
+.result-Part {
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.result-Part h1 {
+    font-size: 20px;
+    margin-top: 5px;
+    color: white;
+}
+div#body-weight {
+    background:white;
+    /* background: orange; */
+    display: inline-block;
+    /* width: 100%; */
+    /* height: 25px; */
+    /* padding: 20px 122px; */
+    overflow: hidden;
+    border: 4px solid orange;
+    width: 200px;
+    height: 29px;
+    color: black;
+    font-weight: bold;
+}
+
+div#gusto-weight {
+    background: white;
+    /* background: orange; */
+    display: inline-block;
+    /* width: 100%; */
+    /* height: 25px; */
+    /* padding: 20px 122px; */
+    overflow: hidden;
+    border: 4px solid orange;
+    width: 200px;
+    height: 29px;
+    color: black;
+    font-weight: bold;
+}
+
+div#gusterDam{
+    background: white;
+    /* background: orange; */
+    display: inline-block;
+    /* width: 100%; */
+    /* height: 25px; */
+    /* padding: 20px 122px; */
+    overflow: hidden;
+    border: 4px solid orange;
+    width: 200px;
+    height: 29px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.maker-name {
+    text-align: right;
+    margin: 12px 36px;
+}
